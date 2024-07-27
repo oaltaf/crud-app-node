@@ -14,6 +14,11 @@ const products = [
     category: "Footwear",
     quantity: "5",
   },
+  {
+    product_name: "Joggers",
+    category: "Footwear",
+    quantity: "10",
+  },
 ];
 
 router.get("/", (req, res) => {
