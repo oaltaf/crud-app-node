@@ -16,6 +16,8 @@ const products = [
   },
 ];
 
-router.get("/products", (req, res) => {
+router.get("/", (req, res) => {
   res.send(products);
 });
+
+export default router;
