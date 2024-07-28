@@ -4,7 +4,7 @@ import userRoutes from "./routes/users.js";
 import prodRoutes from "./routes/products.js";
 
 const app = express();
-const PORT = 5000;
+const PORT = 5500;
 
 app.use(bodyParser.json());
 app.use("/users", userRoutes);
