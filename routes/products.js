@@ -40,4 +40,22 @@ router.get("/:id", (req, res) => {
   }
 });
 
+// POST endpoint to add a new product
+router.post("/products", (req, res) => {
+  const { product_name, price } = req.body;
+
+  if (!product_name || !price) {
+    return res.status(400).send("Name and price are required");
+  }
+
+  const newProduct = {
+    id: products.length ? products[products.length - 1].id + 1 : 1,
+    product_name,
+    price,
+  };
+
+  products.push(newProduct);
+  res.status(201).json(newProduct);
+});
+
 export default router;
