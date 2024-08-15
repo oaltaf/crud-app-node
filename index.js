@@ -14,7 +14,7 @@ app.use("/categories", prodCategories);
 
 app.get("/", (req, res) => {
   console.log("[GET ROUTE]");
-  res.send("Hi FROM HOMEPAGE");
+  res.send("Hi From HomePage");
 });
 
 // app.get("/", (req, res));
